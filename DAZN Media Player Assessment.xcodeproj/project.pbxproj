@@ -11,6 +11,8 @@
 		908AFBC728CC31750010B789 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBC628CC31750010B789 /* ContentView.swift */; };
 		908AFBC928CC31760010B789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908AFBC828CC31760010B789 /* Assets.xcassets */; };
 		908AFBCC28CC31760010B789 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 908AFBCB28CC31760010B789 /* Preview Assets.xcassets */; };
+		908AFBD428CC34C00010B789 /* MediaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBD328CC34C00010B789 /* MediaResponse.swift */; };
+		908AFBD728CC367D0010B789 /* ResponseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBD628CC367D0010B789 /* ResponseEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		908AFBC628CC31750010B789 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		908AFBC828CC31760010B789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		908AFBCB28CC31760010B789 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		908AFBD328CC34C00010B789 /* MediaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaResponse.swift; sourceTree = "<group>"; };
+		908AFBD628CC367D0010B789 /* ResponseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		908AFBC328CC31750010B789 /* DAZN Media Player Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				908AFBD528CC365F0010B789 /* Endpoint */,
+				908AFBD228CC34790010B789 /* Model */,
 				908AFBC428CC31750010B789 /* DAZN_Media_Player_AssessmentApp.swift */,
 				908AFBC628CC31750010B789 /* ContentView.swift */,
 				908AFBC828CC31760010B789 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				908AFBCB28CC31760010B789 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		908AFBD228CC34790010B789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				908AFBD328CC34C00010B789 /* MediaResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		908AFBD528CC365F0010B789 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				908AFBD628CC367D0010B789 /* ResponseEndpoint.swift */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				908AFBC728CC31750010B789 /* ContentView.swift in Sources */,
+				908AFBD728CC367D0010B789 /* ResponseEndpoint.swift in Sources */,
 				908AFBC528CC31750010B789 /* DAZN_Media_Player_AssessmentApp.swift in Sources */,
+				908AFBD428CC34C00010B789 /* MediaResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

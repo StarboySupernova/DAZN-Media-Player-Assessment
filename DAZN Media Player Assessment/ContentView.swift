@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  DAZN Media Player Assessment
 //
-//  Created by user222661 on 9/10/22.
+//  Created by Simbrashe Dombodzvuku on 9/10/22.
 //
 
 import SwiftUI
