@@ -23,3 +23,8 @@ struct MediaElement: Codable {
 }
 
 typealias MediaResponse = [MediaElement]
+
+/*struct MediaResponse: Codable {
+    let elements: [MediaElement]
+}
+ */
