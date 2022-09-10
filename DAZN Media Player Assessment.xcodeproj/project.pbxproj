@@ -15,6 +15,8 @@
 		908AFBD728CC367D0010B789 /* ResponseEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBD628CC367D0010B789 /* ResponseEndpoint.swift */; };
 		908AFBDA28CC3B350010B789 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBD928CC3B350010B789 /* MediaService.swift */; };
 		908AFBDD28CC3C440010B789 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBDC28CC3C440010B789 /* APIError.swift */; };
+		908AFBE028CC40DF0010B789 /* MediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBDF28CC40DF0010B789 /* MediaViewModel.swift */; };
+		908AFBE328CC42C10010B789 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBE228CC42C10010B789 /* ResultState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		908AFBD628CC367D0010B789 /* ResponseEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEndpoint.swift; sourceTree = "<group>"; };
 		908AFBD928CC3B350010B789 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		908AFBDC28CC3C440010B789 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		908AFBDF28CC40DF0010B789 /* MediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewModel.swift; sourceTree = "<group>"; };
+		908AFBE228CC42C10010B789 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		908AFBC328CC31750010B789 /* DAZN Media Player Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				908AFBE128CC42900010B789 /* States */,
+				908AFBDE28CC40C70010B789 /* ViewModel */,
 				908AFBDB28CC3C270010B789 /* Error */,
 				908AFBD828CC3B210010B789 /* Service */,
 				908AFBD528CC365F0010B789 /* Endpoint */,
@@ -109,6 +115,22 @@
 				908AFBDC28CC3C440010B789 /* APIError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		908AFBDE28CC40C70010B789 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				908AFBDF28CC40DF0010B789 /* MediaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		908AFBE128CC42900010B789 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				908AFBE228CC42C10010B789 /* ResultState.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +206,8 @@
 				908AFBC728CC31750010B789 /* ContentView.swift in Sources */,
 				908AFBDA28CC3B350010B789 /* MediaService.swift in Sources */,
 				908AFBD728CC367D0010B789 /* ResponseEndpoint.swift in Sources */,
+				908AFBE028CC40DF0010B789 /* MediaViewModel.swift in Sources */,
+				908AFBE328CC42C10010B789 /* ResultState.swift in Sources */,
 				908AFBC528CC31750010B789 /* DAZN_Media_Player_AssessmentApp.swift in Sources */,
 				908AFBD428CC34C00010B789 /* MediaResponse.swift in Sources */,
 				908AFBDD28CC3C440010B789 /* APIError.swift in Sources */,
