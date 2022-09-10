@@ -17,6 +17,11 @@
 		908AFBDD28CC3C440010B789 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBDC28CC3C440010B789 /* APIError.swift */; };
 		908AFBE028CC40DF0010B789 /* MediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBDF28CC40DF0010B789 /* MediaViewModel.swift */; };
 		908AFBE328CC42C10010B789 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBE228CC42C10010B789 /* ResultState.swift */; };
+		908AFBE628CC47140010B789 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBE528CC47140010B789 /* HomeView.swift */; };
+		908AFBE828CC478C0010B789 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBE728CC478C0010B789 /* ErrorView.swift */; };
+		908AFBEA28CC48E40010B789 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 908AFBE928CC48E40010B789 /* ArticleView.swift */; };
+		908AFBED28CC4A850010B789 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 908AFBEC28CC4A850010B789 /* URLImage */; };
+		908AFBEF28CC4A850010B789 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = 908AFBEE28CC4A850010B789 /* URLImageStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,9 @@
 		908AFBDC28CC3C440010B789 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		908AFBDF28CC40DF0010B789 /* MediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewModel.swift; sourceTree = "<group>"; };
 		908AFBE228CC42C10010B789 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		908AFBE528CC47140010B789 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		908AFBE728CC478C0010B789 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		908AFBE928CC48E40010B789 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908AFBEF28CC4A850010B789 /* URLImageStore in Frameworks */,
+				908AFBED28CC4A850010B789 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 		908AFBC328CC31750010B789 /* DAZN Media Player Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				908AFBE428CC46CB0010B789 /* Views */,
 				908AFBE128CC42900010B789 /* States */,
 				908AFBDE28CC40C70010B789 /* ViewModel */,
 				908AFBDB28CC3C270010B789 /* Error */,
@@ -133,6 +144,16 @@
 			path = States;
 			sourceTree = "<group>";
 		};
+		908AFBE428CC46CB0010B789 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				908AFBE528CC47140010B789 /* HomeView.swift */,
+				908AFBE928CC48E40010B789 /* ArticleView.swift */,
+				908AFBE728CC478C0010B789 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +170,10 @@
 			dependencies = (
 			);
 			name = "DAZN Media Player Assessment";
+			packageProductDependencies = (
+				908AFBEC28CC4A850010B789 /* URLImage */,
+				908AFBEE28CC4A850010B789 /* URLImageStore */,
+			);
 			productName = "DAZN Media Player Assessment";
 			productReference = 908AFBC128CC31750010B789 /* DAZN Media Player Assessment.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +202,9 @@
 				Base,
 			);
 			mainGroup = 908AFBB828CC31750010B789;
+			packageReferences = (
+				908AFBEB28CC4A850010B789 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 908AFBC228CC31750010B789 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,14 +231,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				908AFBE628CC47140010B789 /* HomeView.swift in Sources */,
 				908AFBC728CC31750010B789 /* ContentView.swift in Sources */,
 				908AFBDA28CC3B350010B789 /* MediaService.swift in Sources */,
 				908AFBD728CC367D0010B789 /* ResponseEndpoint.swift in Sources */,
 				908AFBE028CC40DF0010B789 /* MediaViewModel.swift in Sources */,
+				908AFBE828CC478C0010B789 /* ErrorView.swift in Sources */,
 				908AFBE328CC42C10010B789 /* ResultState.swift in Sources */,
 				908AFBC528CC31750010B789 /* DAZN_Media_Player_AssessmentApp.swift in Sources */,
 				908AFBD428CC34C00010B789 /* MediaResponse.swift in Sources */,
 				908AFBDD28CC3C440010B789 /* APIError.swift in Sources */,
+				908AFBEA28CC48E40010B789 /* ArticleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +442,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		908AFBEB28CC4A850010B789 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		908AFBEC28CC4A850010B789 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 908AFBEB28CC4A850010B789 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		908AFBEE28CC4A850010B789 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 908AFBEB28CC4A850010B789 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 908AFBB928CC31750010B789 /* Project object */;
 }

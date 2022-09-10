@@ -36,7 +36,7 @@ class MediaViewModelImplementation: ObservableObject, MediaViewModel {
         self.state = .loading //ensuring our state is .loading every time getArticles is called
         
         let cancellable = service
-            .request(from: .getMedia) //explanation on why enums work without a variable pointer below
+            .request(from: .getMedia)
             .sink { res in
                 switch res {
                     case .finished:
@@ -47,7 +47,7 @@ class MediaViewModelImplementation: ObservableObject, MediaViewModel {
             } receiveValue: { response in
                 self.articles = response
             }
-            //.store(in: &cancellables) cannot use this line as cancellable is immutable
+            
         
         self.cancellables.insert(cancellable)
     }
